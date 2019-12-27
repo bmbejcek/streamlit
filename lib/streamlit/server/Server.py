@@ -233,7 +233,7 @@ class Server(object):
         base = config.get_option("server.baseUrlPath")
         routes = [
             (
-                make_url_path_regex(base, "stream"),
+                make_url_path_regex(base, "ws"),
                 _BrowserWebSocketHandler,
                 dict(server=self),
             ),

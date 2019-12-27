@@ -87,7 +87,7 @@ class ServerTestCase(tornado.testing.AsyncHTTPTestCase):
             'tornado.testing.gen_test' coroutine.
 
         """
-        return tornado.websocket.websocket_connect(self.get_ws_url("/stream"))
+        return tornado.websocket.websocket_connect(self.get_ws_url("/ws"))
 
     @tornado.gen.coroutine
     def read_forward_msg(self, ws_client):

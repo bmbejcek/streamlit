@@ -39,7 +39,7 @@ const SERVER_PING_PATH = "healthz"
 /**
  * The path of the server's websocket endpoint.
  */
-const WEBSOCKET_STREAM_PATH = "stream"
+const WEBSOCKET_STREAM_PATH = "ws"
 
 /**
  * Wait this long between pings, in millis.
